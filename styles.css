@@ -1,0 +1,111 @@
+/* CSS for entire Page: */
+body {
+  font-family: Arial;
+  color: Black;
+}
+
+/* Heading color style*/
+h1,
+h2 {
+  color: Red;
+  text-align: center;
+  font-family: "Recursive";
+  font-variation-settings: "wdth" 300, "slnt" -30;
+}
+
+/* Random Text Paragraph-header Style*/
+.C_Header2 {
+  color: Purple;
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-variation-settings: "wdth" 100, "slnt" -10;
+}
+
+/* All Paragraph style */
+p {
+  font-size: 20px;
+  font-family: "Sixtyfour", sans-serif;
+  color: Black;
+}
+/* Random Text Paragraph Style*/
+.C_paragraph {
+  font-size: 15px;
+  font-family: "Courier New", monospace;
+  color: Blue;
+  font-style: italic;
+  text-align: center;
+  background-color: Green;
+}
+
+/* Apply to all class padding-margin Style*/
+.padding-margin {
+  background: teal;
+  width: 760px;
+  height: 160px;
+  padding: 50px;
+  margin: 50px;
+  border: 50px 50px 50px 50px;
+  margin: 20;
+}
+
+/* Make Box1 DIV visible and set transition type*/
+#box1Red {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border: 5px solid black;
+  background-color: Red; /*set start point */
+  transition: background-color 3s linear;
+  font-size: 10px; /*set start point */
+  transition: font-size 3s linear;
+}
+
+/*Color and font size transition for Box1 Red to Yellow*/
+#box1Red:hover {
+  background-color: yellow;
+  font-size: 30px;
+}
+
+/* make Box2 DIV visible*/
+#box2Red {
+  width: 60px;
+  height: 60px;
+  background-color: Red;
+  position: relative;
+  border: 5px solid black;
+  transition: 2s;
+}
+
+/*transformation*/
+#box2Red:hover {
+  transform: rotateX(360deg);
+}
+
+/* Animation Style*/
+@keyframe rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* make Box3 DIV visible*/
+#box3Red {
+  width: 60px;
+  height: 60px;
+  background-color: Red;
+  border: 5px solid black;
+  transform: rotate(45deg);
+
+  animation-name: rotate 4s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
