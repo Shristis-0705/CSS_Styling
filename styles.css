@@ -43,7 +43,6 @@ p {
   width: 760px;
   height: 160px;
   padding: 50px;
-  margin: 50px;
   border: 50px 50px 50px 50px;
   margin: 20;
 }
@@ -55,7 +54,6 @@ p {
   position: relative;
   border: 5px solid black;
   background-color: Red; /*set start point */
-  transition: background-color 3s linear;
   font-size: 10px; /*set start point */
   transition: font-size 3s linear;
 }
